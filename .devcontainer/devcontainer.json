@@ -1,0 +1,74 @@
+{
+  "name": "TypeScript + Vite",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "bradlc.vscode-tailwindcss",
+        "ritwickdey.liveserver",
+        "ms-ceintl.vscode-language-pack-es",
+        "dsznajder.es7-react-redux-snippets",
+        "usernamehw.errorlens",
+        "abecbrasilovskiy.html-css-support",
+        "christian-kohler.path-intellisense",
+        "formulahendry.auto-rename-tag",
+        "eamodio.gitlens",
+        "ms-vscode.vscode-typescript-next",
+        "humao.rest-client",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-spanish"
+      ],
+      "settings": {
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false,
+        "telemetry.enableTelemetry": false,
+        "workbench.enableExperiments": false,
+        "update.mode": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+          "source.organizeImports": true
+        },
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "typescript.preferences.includePackageJsonAutoImports": "on",
+        "typescript.suggest.autoImports": true,
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "cSpell.language": "es,en",
+        "cSpell.enableFiletypes": [
+          "typescript",
+          "typescriptreact",
+          "javascript",
+          "javascriptreact",
+          "html",
+          "css",
+          "scss",
+          "json",
+          "markdown"
+        ]
+      }
+    }
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "appPort": ["5175:5173"],
+  "postCreateCommand": "sudo chown -R node:node /workspaces/DevContainer-TypeScript-Vite-Taiwind && npm install",
+  "remoteUser": "node",
+  "containerUser": "root",
+  "updateRemoteUserUID": true,
+  "workspaceFolder": "/workspaces/DevContainer-TypeScript-Vite-Taiwind"
+}

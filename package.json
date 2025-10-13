@@ -1,0 +1,35 @@
+{
+  "name": "typescript-vite-devcontainer",
+  "version": "1.0.0",
+  "description": "Proyecto TypeScript con Vite en DevContainer para estudiantes",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/vite": "^4.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "typescript": "^5.3.3",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "prettier": "^3.1.0",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "keywords": [
+    "typescript",
+    "vite",
+    "devcontainer",
+    "educacion"
+  ],
+  "author": "Isaías FL",
+  "license": "MIT"
+}
