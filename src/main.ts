@@ -1,5 +1,4 @@
 // Punto de entrada principal de la aplicación
-import './styles/main.css';
 import './styles/tailwind.css';
 
 import { initializeApp, saludar, crearUsuario, type Usuario } from './app';
