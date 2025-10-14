@@ -14,6 +14,7 @@
         "ritwickdey.liveserver",
         "ms-ceintl.vscode-language-pack-es",
         "dsznajder.es7-react-redux-snippets",
+        "xabikos.JavaScriptSnippets",
         "usernamehw.errorlens",
         "abecbrasilovskiy.html-css-support",
         "christian-kohler.path-intellisense",
@@ -43,6 +44,8 @@
         "typescript.suggest.autoImports": true,
         "typescript.updateImportsOnFileMove.enabled": "always",
         "typescript.preferences.importModuleSpecifier": "relative",
+        "typescript.preferences.quoteStyle": "double",
+        "javascript.preferences.quoteStyle": "double",
         "cSpell.language": "es,en",
         "cSpell.enableFiletypes": [
           "typescript",

@@ -28,8 +28,8 @@ module.exports = {
     // Forzar el uso de punto y coma al final de las sentencias
     'semi': ['error', 'always'],
     
-    // Forzar el uso de comillas simples
-    'quotes': ['error', 'single'],
+    // Forzar el uso de comillas dobles
+    'quotes': ['error', 'double'],
     
     // Forzar el uso de 2 espacios para indentación
     'indent': ['error', 2],
